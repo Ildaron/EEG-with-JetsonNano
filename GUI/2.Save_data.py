@@ -15,7 +15,7 @@ GPIO.setup(input_drdy, GPIO.IN, pull_up_down=GPIO.PUD_UP)
 from time import sleep
 spi = spidev.SpiDev()
 spi.open(0,0)
-spi.max_speed_hz=100000
+spi.max_speed_hz=600000
 
 #spi.max_speed_hz=25000
 spi.lsbfirst=False
